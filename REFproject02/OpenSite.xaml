@@ -1,0 +1,283 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="OpenSite" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="868.8,4408" sap2010:WorkflowViewState.IdRef="OpenSite_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="OpenSite" sap:VirtualizedContainerService.HintSize="536.8,4343.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser Sahibinden" sap:VirtualizedContainerService.HintSize="474.4,4231.2" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.sahibinden.com/">
+      <ui:OpenBrowser.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="440.8,4128.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="378.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="Info" Message="[&quot;Sagibinden sitesi ziyaret edildi&quot;]" />
+            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="378.4,24.8" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke KonutClick" sap:VirtualizedContainerService.HintSize="378.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Utilities\GenericActivities\ClickActivity.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_WorkflowName">Click1</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ScreenName" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_ElementName">Konut</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ElementType" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_Selector" xml:space="preserve">&lt;html app='chrome.exe' title='sahibinden.com - *' /&gt;&lt;webctrl aaname='                             Konut' tag='A' /&gt;</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ImagePath" />
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_Timeout" />
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_ImageTimeout" />
+                <InArgument x:TypeArguments="x:Boolean" x:Key="in_boolSimulateClick" />
+                <InArgument x:TypeArguments="x:Boolean" x:Key="in_boolImageBottomRight" />
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="378.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Konut seçildi&quot;]" />
+            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="378.4,24.8" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke İlClick" sap:VirtualizedContainerService.HintSize="378.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Utilities\GenericActivities\ClickActivity.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_WorkflowName">Click2</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ScreenName" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_ElementName">ilSecimi</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ElementType" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_Selector">&lt;html app='chrome.exe' title='*' /&gt;&lt;webctrl parentid='searchForm' tag='SPAN' idx='3' /&gt;</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ImagePath" />
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_Timeout" />
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_ImageTimeout" />
+                <InArgument x:TypeArguments="x:Boolean" x:Key="in_boolSimulateClick" />
+                <InArgument x:TypeArguments="x:Boolean" x:Key="in_boolImageBottomRight" />
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="378.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;İl dropdownu açıldı&quot;]" />
+            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="378.4,24.8" sap2010:WorkflowViewState.IdRef="Delay_2" />
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke İstanbulClick" sap:VirtualizedContainerService.HintSize="378.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Utilities\GenericActivities\ClickActivity.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_WorkflowName">Click3</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ScreenName" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_ElementName">ist</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ElementType" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_Selector">&lt;html app='chrome.exe' title='*' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;div&amp;gt;div&amp;gt;li' parentid='searchForm' tag='LI' idx='2' /&gt;</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ImagePath" />
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_Timeout" />
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_ImageTimeout" />
+                <InArgument x:TypeArguments="x:Boolean" x:Key="in_boolSimulateClick" />
+                <InArgument x:TypeArguments="x:Boolean" x:Key="in_boolImageBottomRight" />
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="378.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;İstanbul seçildi&quot;]" />
+            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="378.4,24.8" sap2010:WorkflowViewState.IdRef="Delay_3" />
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke İlçeClick" sap:VirtualizedContainerService.HintSize="378.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Utilities\GenericActivities\ClickActivity.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_WorkflowName">Click4</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ScreenName" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_ElementName">ilceSecimi</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ElementType" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_Selector">&lt;html app='chrome.exe' title='*' /&gt;&lt;webctrl aaname='İlçe' parentid='searchForm' tag='SPAN' /&gt;</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ImagePath" />
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_Timeout" />
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_ImageTimeout" />
+                <InArgument x:TypeArguments="x:Boolean" x:Key="in_boolSimulateClick" />
+                <InArgument x:TypeArguments="x:Boolean" x:Key="in_boolImageBottomRight" />
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="378.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;İlçe dropdownu açıldı&quot;]" />
+            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="378.4,24.8" sap2010:WorkflowViewState.IdRef="Delay_4" />
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke KadıköyClick" sap:VirtualizedContainerService.HintSize="378.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Utilities\GenericActivities\ClickActivity.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_WorkflowName">Click5</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ScreenName" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_ElementName">Kad</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ElementType" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_Selector">&lt;html app='chrome.exe' title='*' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;div&amp;gt;div&amp;gt;li' parentid='searchForm' tag='LI' idx='106' /&gt;</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ImagePath" />
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_Timeout" />
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_ImageTimeout" />
+                <InArgument x:TypeArguments="x:Boolean" x:Key="in_boolSimulateClick" />
+                <InArgument x:TypeArguments="x:Boolean" x:Key="in_boolImageBottomRight" />
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="378.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Kadıköy seçildi&quot;]" />
+            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="378.4,24.8" sap2010:WorkflowViewState.IdRef="Delay_5" />
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke TypeIntoMinFiyat" sap:VirtualizedContainerService.HintSize="378.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Utilities\GenericActivities\TypeIntoActivity.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ImagePath" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_ElementType" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_Selector">&lt;html app='chrome.exe' title='*' /&gt;&lt;webctrl id='minPrice' tag='INPUT' type='text' /&gt;</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ElementName">MinPrice</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ScreenName" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_WorkflowName" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_Value">1000000</InArgument>
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_Timeout" />
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_ImageTimeout" />
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="378.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Min fiyat 1.000.000 TL olarak ayarlandı&quot;]" />
+            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="378.4,24.8" sap2010:WorkflowViewState.IdRef="Delay_6" />
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke TypeIntoMaxFiyat" sap:VirtualizedContainerService.HintSize="378.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Utilities\GenericActivities\TypeIntoActivity.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ImagePath" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_ElementType" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_Selector">&lt;html app='chrome.exe' title='*' /&gt;&lt;webctrl id='maxPrice' tag='INPUT' type='text' /&gt;</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ElementName">MaxPrice</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ScreenName" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_WorkflowName" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_Value">2000000</InArgument>
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_Timeout" />
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_ImageTimeout" />
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="378.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Max fiyat 2.000.000 TL olarak ayarlandı&quot;]" />
+            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="378.4,24.8" sap2010:WorkflowViewState.IdRef="Delay_7" />
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke DetaylarClick" sap:VirtualizedContainerService.HintSize="378.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Utilities\GenericActivities\ClickActivity.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_WorkflowName">Click6</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ScreenName" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_ElementName">FazlaSecenek</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ElementType" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_Selector">&lt;html app='chrome.exe' title='*' /&gt;&lt;webctrl aaname='Daha fazla seçenek göster' parentid='searchForm' tag='A' /&gt;</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ImagePath" />
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_Timeout" />
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_ImageTimeout" />
+                <InArgument x:TypeArguments="x:Boolean" x:Key="in_boolSimulateClick" />
+                <InArgument x:TypeArguments="x:Boolean" x:Key="in_boolImageBottomRight" />
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="378.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Daha fazla seçeneklere tıklandı&quot;]" />
+            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="378.4,24.8" sap2010:WorkflowViewState.IdRef="Delay_8" />
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke BinaYaşıClick" sap:VirtualizedContainerService.HintSize="378.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Utilities\GenericActivities\ClickActivity.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_WorkflowName">Click7</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ScreenName" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_ElementName">BinaYasi</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ElementType" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_Selector">&lt;html app='chrome.exe' title='*' /&gt;&lt;webctrl id='faceted-left-menu-a812' tag='A' /&gt;</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ImagePath" />
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_Timeout" />
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_ImageTimeout" />
+                <InArgument x:TypeArguments="x:Boolean" x:Key="in_boolSimulateClick" />
+                <InArgument x:TypeArguments="x:Boolean" x:Key="in_boolImageBottomRight" />
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="378.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Bina yaşı alanı seçildi&quot;]" />
+            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="378.4,24.8" sap2010:WorkflowViewState.IdRef="Delay_9" />
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke BinaYaşıAyarlamaClick" sap:VirtualizedContainerService.HintSize="378.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Utilities\GenericActivities\ClickActivity.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_WorkflowName">Click8</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ScreenName" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_ElementName">YasSecimi</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ElementType" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_Selector">&lt;html app='chrome.exe' title='*' /&gt;&lt;webctrl id='faceted-43904-a812' tag='A' /&gt;</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ImagePath" />
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_Timeout" />
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_ImageTimeout" />
+                <InArgument x:TypeArguments="x:Boolean" x:Key="in_boolSimulateClick" />
+                <InArgument x:TypeArguments="x:Boolean" x:Key="in_boolImageBottomRight" />
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="378.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[&quot;Bina yaşı 31 ve üzeri olarak ayarlandı&quot;]" />
+            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="378.4,24.8" sap2010:WorkflowViewState.IdRef="Delay_10" />
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke AramaButonuClick" sap:VirtualizedContainerService.HintSize="378.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Utilities\GenericActivities\ClickActivity.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_WorkflowName">Click9</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ScreenName" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_ElementName">Ara</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ElementType" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_Selector">&lt;html app='chrome.exe' title='*' /&gt;&lt;webctrl id='doDetailedSearchButton' tag='A' /&gt;</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ImagePath" />
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_Timeout" />
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_ImageTimeout" />
+                <InArgument x:TypeArguments="x:Boolean" x:Key="in_boolSimulateClick" />
+                <InArgument x:TypeArguments="x:Boolean" x:Key="in_boolImageBottomRight" />
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="378.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info" Message="[&quot;Seçilen kriterlere göre arama yapıldı&quot;]" />
+            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="378.4,24.8" sap2010:WorkflowViewState.IdRef="Delay_13" />
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke EmlakOfisindenClick" sap:VirtualizedContainerService.HintSize="378.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_14" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Utilities\GenericActivities\ClickActivity.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_WorkflowName">Click10</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ScreenName" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_ElementName">Emlak</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ElementType" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_Selector">&lt;html app='chrome.exe' title='*' /&gt;&lt;webctrl parentid='searchResultsSearchForm' tag='A' idx='14' /&gt;</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ImagePath" />
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_Timeout" />
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_ImageTimeout" />
+                <InArgument x:TypeArguments="x:Boolean" x:Key="in_boolSimulateClick" />
+                <InArgument x:TypeArguments="x:Boolean" x:Key="in_boolImageBottomRight" />
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="378.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="Info" Message="[&quot;İlanlar emlak ofisinden olarak ayarlandı&quot;]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:OpenBrowser.Body>
+    </ui:OpenBrowser>
+  </Sequence>
+</Activity>

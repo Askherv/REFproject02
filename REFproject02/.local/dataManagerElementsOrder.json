@@ -1,0 +1,432 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransactionItem&StateMachine_1",
+        "SystemError&StateMachine_1",
+        "BusinessRuleException&StateMachine_1",
+        "TransactionNumber&StateMachine_1",
+        "Config&StateMachine_1",
+        "RetryNumber&StateMachine_1",
+        "TransactionField2&StateMachine_1",
+        "TransactionField1&StateMachine_1",
+        "TransactionID&StateMachine_1",
+        "TransactionData&StateMachine_1",
+        "configPath&StateMachine_1",
+        "dtProjectAuthoritiesContacts&StateMachine_1",
+        "dtProcessTracking&StateMachine_1",
+        "GlobalCounter&StateMachine_1",
+        "GlobalCounterMax&StateMachine_1",
+        "dtProcesses&StateMachine_1",
+        "dtrProcess&StateMachine_1",
+        "ProjectRootFileDirectory&StateMachine_1",
+        "MonthlyLogFileNamePattern&StateMachine_1",
+        "MonthlyLogFileDirectory&StateMachine_1",
+        "MonthlyLogFileFullPath&StateMachine_1",
+        "dateStartTime&StateMachine_1",
+        "strStartTime&StateMachine_1",
+        "SystemExceptionFileDirectory&StateMachine_1",
+        "BusinessExceptionFileDirectory&StateMachine_1",
+        "ProcessTrackingFileDirectory&StateMachine_1",
+        "ApplicationsArray&Sequence_27",
+        "ApplicationsToClose&Sequence_27",
+        "ScreenShotFileDirectory&Sequence_34",
+        "ScreenShotFilePath&Sequence_34",
+        "ScreenShotFileName&Sequence_34",
+        "ScreenShotFileDirectory&Sequence_41",
+        "ScreenShotFileName&Sequence_41",
+        "ScreenShotFilePath&Sequence_41",
+        "ShouldStop&Sequence_1",
+        "ScreenShotDirectory&TryCatch_11",
+        "variable1&Sequence_68"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "OrchestratorQueueName"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/KillAllProcesses.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ProcessStatus&Sequence_9",
+        "ExceptionCounter&Sequence_9",
+        "TerminationMessage&Sequence_9",
+        "LoginApplicationMaxRetryNumber&Sequence_9",
+        "LoginApplicationDelayForAppear&Sequence_9"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "OpenSite.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "IntegrationPoints/File/GetContactInformation.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ProjectAuthoritiesContactFileDirectory&Sequence_1",
+        "ProjectAuthoritiesContactFileName&Sequence_1",
+        "ProjectAuthoritiesContactSheetname&Sequence_1",
+        "ProjectAuthoritiesContactFilePath&Sequence_1",
+        "ProjectRootFileDirectory&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "io_dtProjectAuthoritiesContact"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Utilities/GenericActivities/ClickActivity.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "IsExistElement&Sequence_5",
+        "IsExistElementImage&Sequence_4",
+        "foundImage&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_WorkflowName",
+        "in_ScreenName",
+        "in_ElementName",
+        "in_ElementType",
+        "in_Selector",
+        "in_ImagePath",
+        "in_Timeout",
+        "in_ImageTimeout",
+        "in_boolSimulateClick",
+        "in_boolImageBottomRight"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/GetTransactionData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionNumber",
+        "in_Config",
+        "out_TransactionItem",
+        "out_TransactionField1",
+        "out_TransactionField2",
+        "out_TransactionID",
+        "io_TransactionData",
+        "in_GlobalCounter",
+        "out_dtrProcess",
+        "in_dtProcesses"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "AddToQueue.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_Ilan&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllSettings.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "configTable&Sequence_5",
+        "assets&Sequence_6",
+        "assetValue&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ConfigFile",
+        "in_ConfigSheets",
+        "out_Config"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "IntegrationPoints/Mail/SMTP/SMTP_SendMail.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "MailPrimaryRecipients&Sequence_17",
+        "MailSecondaryRecipients&Sequence_17",
+        "MailHiddenRecipients&Sequence_17",
+        "MailAttachments&Sequence_17",
+        "SMTPHostServer&Sequence_17",
+        "SMTPHostPort&Sequence_17",
+        "SMTPSenderFrom&Sequence_17",
+        "SMTPSenderName&Sequence_17",
+        "SMTPLogonEmail&Sequence_17",
+        "SMTPLogonPassword&Sequence_17"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "in_MailPrimaryRecipients",
+        "in_MailSecondaryRecipients",
+        "in_MailHiddenRecipients",
+        "in_MailAttachments",
+        "in_MailSubject",
+        "in_MailBody",
+        "in_Timeout"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionItem",
+        "in_Config",
+        "in_GlobalCounter",
+        "io_dtProcessTracking",
+        "in_dateStartTime",
+        "in_strStartTime"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/SetTransactionStatus.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "queueRetry&Sequence_5"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "in_SystemError",
+        "in_BusinessRuleException",
+        "in_TransactionItem",
+        "io_RetryNumber",
+        "io_TransactionNumber",
+        "in_TransactionField1",
+        "in_TransactionField2",
+        "in_TransactionID"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ExceleYazdırma.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dtTransposed&Sequence_1",
+        "FinalResult&Sequence_1",
+        "ilanAratma&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_GlobalCounter",
+        "in_Config",
+        "in_TransactionItem"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Utilities/GenericActivities/TypeIntoActivity.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "IsExistElement&Sequence_19",
+        "foundImage&Sequence_18",
+        "IsExistElementImage&Sequence_18"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ImagePath",
+        "in_ElementType",
+        "in_Selector",
+        "in_ElementName",
+        "in_ScreenName",
+        "in_WorkflowName",
+        "in_Value",
+        "in_Timeout",
+        "in_ImageTimeout"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ProcessTracking/FillMonthlyLogFile.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "WorkflowName&Sequence_4",
+        "TotalTransactionsNumber&Sequence_4",
+        "SuccesTransactionsNumber&Sequence_4",
+        "MaxTransactionsTime&Sequence_4",
+        "MinTransactionsTime&Sequence_4",
+        "dtMonthlyExcelFile&Sequence_4",
+        "FailedTransactionsNumber&Sequence_4",
+        "SuccesFilteredDataRow&Sequence_8",
+        "ListOfInt_TransactionTimeColumn&Sequence_13",
+        "isMonthlyExcelFilePathExist&Sequence_7",
+        "FilteredDataRowList&Sequence_15",
+        "NewDataRow&Sequence_18",
+        "index&Sequence_18",
+        "DataRowObjectArray&Sequence_17",
+        "DataRowObjectArray&Sequence_24"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "in_ProcessName",
+        "in_dtProcessTracking",
+        "in_SuccesStateMessage",
+        "in_MonthlyExcelFullFilePath",
+        "in_MonthlyExcelSheetName",
+        "in_ProcessTrackingStateColumnName",
+        "in_MonthlyLogFileTableProcessNameColumnName",
+        "in_MonthlyLogFileTableDateColumnName",
+        "in_MonthlyLofFileTableTotalTransactionColumnName",
+        "in_MonthlyLofFileTableSuccesTransactionColumnName",
+        "in_MonthlyLofFileTableFailedTransactionColumnName"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ProcessTracking/PerformSuccessProcessResult.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "in_GlobalCounter",
+        "in_ExceptionType",
+        "in_ExceptionMessage",
+        "io_dtProcessTracking",
+        "in_dateStartTime",
+        "in_strStartTime"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ProcessTracking/FillProcessTrackingFile.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ProcessCompletionStatus&Sequence_1",
+        "ProcessCompletionDescription&Sequence_1",
+        "ProcessTrackingTableIdNumberColumnName&Sequence_1",
+        "ProcessTrackingTableCompletionStatusColumnName&Sequence_1",
+        "ProcessTrackingTableCompletionDescriptionColumnName&Sequence_1",
+        "ProcessTrackingCompletionDescriptionColumnSuccessMessagePattern&Sequence_1",
+        "ProcessTrackingCompletionDescriptionColumnSystemErrorMessagePattern&Sequence_1",
+        "ProcessTrackingCompletionDescriptionColumnBusinessRuleErrorMessagePattern&Sequence_1",
+        "ProcessSystemExceptionExceptionType&Sequence_1",
+        "ProcessBusinessRuleExceptionExceptionType&Sequence_1",
+        "ProcessTrackingRow&Sequence_1",
+        "ProcessTrackingTableStartTimeColumnName&Sequence_1",
+        "ProcessTrackingTableEndTimeColumnName&Sequence_1",
+        "ProcessTrackingTableDurationColumnName&Sequence_1",
+        "dateEndTime&Sequence_1",
+        "strEndTime&Sequence_1",
+        "Duration&Sequence_1",
+        "ProcessTrackingTableExceptionScreenShotFullPathColumnName&Sequence_1",
+        "ContractNo&TryCatch_1",
+        "MessagePattern&Sequence_14",
+        "RowObjectArray&Sequence_14"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_GlobalCounter",
+        "in_BusinessExceptionMessage",
+        "in_ExceptionMessage",
+        "in_Config",
+        "io_dtProcessTracking",
+        "in_ExceptionType",
+        "in_dateStartTime",
+        "in_strStartTime",
+        "in_ExceptionScreenShotFileFullPath"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ProcessTracking/HandleProcessResult.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ProcessTrackingFileDirectory&Sequence_4",
+        "RootFileDirectory&Sequence_4",
+        "ProcessTrackingFileName&Sequence_4",
+        "ProcessTrackingSheetName&Sequence_4",
+        "MailForCompletedProcessSubject&Sequence_4",
+        "MailForCompletedProcessBody&Sequence_4",
+        "PrimaryRecipients&Sequence_4",
+        "AttachmentList&Sequence_4",
+        "FullProcessTrackingFileName&Sequence_4",
+        "FullProcessTrackingFilePath&Sequence_4",
+        "SMTPSenderMail&Sequence_4",
+        "ProcessTrackingTableCompletionStatusColumnName&Sequence_4",
+        "CurrentStatus&Sequence_4",
+        "SelectedStatus&Sequence_4",
+        "SelectedDescription&Sequence_4",
+        "ProcessTrackingTableCompletionDescriptionColumnName&Sequence_4",
+        "ProcessTrackingFileInfo&Sequence_2",
+        "DeletedRowCount&Sequence_23"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "in_dtProjectAuthoritiesContacts",
+        "in_dtProcessTracking",
+        "in_ProcessTrackingFileDirectory"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Utilities/ProcessManagement/ForceApplicationToClose.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ExtendedLogMessage&Sequence_5",
+        "ProcessCollection&Sequence_2",
+        "ProcessCollection&Sequence_3",
+        "FilteredProcessCollection&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_Process",
+        "In_ProcessName",
+        "Out_Status"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "_Test.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Config&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    }
+  ]
+}
